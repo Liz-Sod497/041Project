@@ -85,7 +85,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="This experiment consists of two parts. In the first part, you are going to see 32 videos of 2 three-syllable sequences consisting of sign-like gestures. Try to memorize the first sequence. &amp;#10;&amp;#10;After having seen the first sequence, you should decide whether or not the second sequence was identical to the first one. Press &quot;Y&quot; if you think that the second sequence was identical to the first one. Press &quot;N&quot; if you think that the second sequence was not identical to the first one. If you are unsure, trust your intuition. " valType="str" updates="set every repeat" name="text"/>
+        <Param val="This experiment consists of two parts. In the first part, you are going to see 32 videos of 2 three-syllable sequences consisting of sign-like gestures. Try to memorize the first sequence. &amp;#10;&amp;#10;After having seen the first sequence, you should decide whether or not the second sequence was identical to the first one. Click &quot;Y&quot; if you think that the second sequence was identical to the first one. Click &quot;N&quot; if you think that the second sequence was not identical to the first one. If you are unsure, trust your intuition. " valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -306,7 +306,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-8.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA8" valType="code" updates="None" name="name"/>
@@ -314,7 +314,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="6" valType="code" updates="None" name="startVal"/>
@@ -324,49 +324,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial1_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial1_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="10" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial1_mouse">
-        <Param val="trial1_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial1_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="10" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial2">
       <MovieComponent name="ABA16">
@@ -401,7 +358,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-9.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA9" valType="code" updates="None" name="name"/>
@@ -409,7 +366,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -419,49 +376,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial2_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial2_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial2_mouse">
-        <Param val="trial2_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial2_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial1_response">
       <TextComponent name="Match1">
@@ -686,7 +600,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-15.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA15_2" valType="code" updates="None" name="name"/>
@@ -694,7 +608,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -704,49 +618,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial3_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial3_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial3_mouse">
-        <Param val="trial3_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial3_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial3_response">
       <TextComponent name="Match3">
@@ -876,7 +747,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-2.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA2_2" valType="code" updates="None" name="name"/>
@@ -884,7 +755,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -894,49 +765,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial4_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial4_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial4_mouse">
-        <Param val="trial4_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial4_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial4_response">
       <TextComponent name="Match4">
@@ -1066,7 +894,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-6.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA6" valType="code" updates="None" name="name"/>
@@ -1074,7 +902,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -1084,49 +912,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial5_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial5_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial5_mouse">
-        <Param val="trial5_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial5_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial5_response">
       <TextComponent name="Match5">
@@ -1256,7 +1041,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-13.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA13_3" valType="code" updates="None" name="name"/>
@@ -1264,7 +1049,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -1274,49 +1059,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial6_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial6_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial6_mouse">
-        <Param val="trial6_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial6_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial6_response">
       <TextComponent name="Match6">
@@ -1446,7 +1188,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-7.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA7_3" valType="code" updates="None" name="name"/>
@@ -1454,7 +1196,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -1464,49 +1206,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial7_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial7_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial7_mouse">
-        <Param val="trial7_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial7_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial7_response">
       <TextComponent name="Match7">
@@ -1636,7 +1335,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-2.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA2_3" valType="code" updates="None" name="name"/>
@@ -1644,7 +1343,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -1654,49 +1353,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial8_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial8_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial8_mouse">
-        <Param val="trial8_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial8_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial8_response">
       <TextComponent name="Match8">
@@ -1826,7 +1482,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-4.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA4_2" valType="code" updates="None" name="name"/>
@@ -1834,7 +1490,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -1844,49 +1500,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial9_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial9_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial9_mouse">
-        <Param val="trial9_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial9_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial9_response">
       <TextComponent name="Match9">
@@ -2016,7 +1629,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-16.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA16_2" valType="code" updates="None" name="name"/>
@@ -2024,7 +1637,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -2034,49 +1647,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial10_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial10_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial10_mouse">
-        <Param val="trial10_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial10_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial10_response">
       <TextComponent name="Match10">
@@ -2206,7 +1776,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-11.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA11_2" valType="code" updates="None" name="name"/>
@@ -2214,7 +1784,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -2224,49 +1794,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial11_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial11_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial11_mouse">
-        <Param val="trial11_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial11_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial11_response">
       <TextComponent name="Match11">
@@ -2396,7 +1923,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-12.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA12_2" valType="code" updates="None" name="name"/>
@@ -2404,7 +1931,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="5" valType="code" updates="None" name="startVal"/>
@@ -2414,49 +1941,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial12_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial12_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial12_mouse">
-        <Param val="trial12_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial12_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial12_response">
       <TextComponent name="Match12">
@@ -2586,7 +2070,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-7.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA7_4" valType="code" updates="None" name="name"/>
@@ -2594,7 +2078,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -2604,49 +2088,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial13_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial13_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial13_mouse">
-        <Param val="trial13_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial13_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial13_response">
       <TextComponent name="Match13">
@@ -2776,7 +2217,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-16.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA16_4" valType="code" updates="None" name="name"/>
@@ -2784,7 +2225,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -2794,49 +2235,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial14_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial14_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial14_mouse">
-        <Param val="trial14_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial14_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial14_response">
       <TextComponent name="Match14">
@@ -2966,7 +2364,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-3.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA3_2" valType="code" updates="None" name="name"/>
@@ -2974,7 +2372,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -2984,49 +2382,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial15_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial15_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial15_mouse">
-        <Param val="trial15_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial15_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial15_response">
       <TextComponent name="Match15">
@@ -3156,7 +2511,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-10.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA10" valType="code" updates="None" name="name"/>
@@ -3164,7 +2519,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -3174,49 +2529,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial16_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial16_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial16_mouse">
-        <Param val="trial16_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial16_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial16_response">
       <TextComponent name="Match16">
@@ -3346,7 +2658,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-6.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA6_3" valType="code" updates="None" name="name"/>
@@ -3354,7 +2666,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -3364,49 +2676,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial17_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial17_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial17_mouse">
-        <Param val="trial17_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial17_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial17_response">
       <TextComponent name="Match17">
@@ -3537,7 +2806,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-5.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA_5" valType="code" updates="None" name="name"/>
@@ -3545,7 +2814,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -3555,49 +2824,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial18_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial18_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial18_mouse">
-        <Param val="trial18_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial18_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial18_response">
       <TextComponent name="Match18">
@@ -3720,6 +2946,31 @@
         <Param val="height" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
+      <MovieComponent name="ABA10_3">
+        <Param val="True" valType="bool" updates="None" name="No audio"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="ffpyplayer" valType="str" updates="None" name="backend"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="4" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="False" valType="bool" updates="None" name="loop"/>
+        <Param val="ABAstim/ABA-10.mp4" valType="file" updates="set every repeat" name="movie"/>
+        <Param val="ABA10_3" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="8" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="1" valType="num" updates="None" name="volume"/>
+      </MovieComponent>
     </Routine>
     <Routine name="trial20_response"/>
     <Routine name="trial19">
@@ -3755,7 +3006,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="4" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="None" name="loop"/>
         <Param val="ABAstim/ABA-5.mp4" valType="file" updates="set every repeat" name="movie"/>
         <Param val="ABA1" valType="code" updates="None" name="name"/>
@@ -3763,7 +3014,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1.5,0.8]" valType="list" updates="constant" name="size"/>
+        <Param val="[1.5,0.8]" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="8" valType="code" updates="None" name="startVal"/>
@@ -3773,49 +3024,6 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="1" valType="num" updates="None" name="volume"/>
       </MovieComponent>
-      <TextComponent name="trial19_endbutton">
-        <Param val="black" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="trial19_endbutton" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(.6, -.45)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to continue" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <MouseComponent name="trial19_mouse">
-        <Param val="trial19_endbutton" valType="list" updates="constant" name="clickable"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
-        <Param val="trial19_mouse" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
-        <Param val="on valid click" valType="str" updates="None" name="saveMouseState"/>
-        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="12" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
-      </MouseComponent>
     </Routine>
     <Routine name="trial19_response">
       <TextComponent name="Match19">
